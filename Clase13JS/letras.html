@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        <script>
+            var frase = prompt("ingrese una frase", "");
+            var contador = 0;
+            document.write("Cantidad de letras: " + frase.length + "<br>");
+            
+            for(i=0; i<frase.length ; i++){
+                document.write("Paso: " + i);
+                document.write(" Letra: " + frase[i] + "<br>");
+                // if (frase[i] === "a") {
+                //     contador++;
+                // }
+                switch (frase[i]) {
+                    case "a":
+                        contador++;
+                        document.write(frase[i]);
+                        break;
+                    case "e":
+                        contador++;
+                        document.write(frase[i]);
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+
+            
+            document.write("Cantidad de a: " + contador);
+
+        </script>
+    </h3>
+</body>
+</html>

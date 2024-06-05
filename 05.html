@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function siguiente(valor){
+            return parseInt(valor) + 1
+        }
+
+        function doble(valor){
+            return valor * 2
+        }
+        var num1
+        var num = prompt("ingresar")
+
+        console.log(doble(num))
+
+        var resultado = doble(num)
+
+        document.write("Resultado var= " + resultado + "<br>")
+        document.write("Resultado funcion: " + doble(num) + "<br>")
+        document.write("Resultado funcion: " + siguiente(num) + "<br>")
+        document.write("Resultado funcion: " + doble(siguiente(num), num1) + "<br>")
+
+        Math.PI
+        
+    </script>
+</body>
+</html>

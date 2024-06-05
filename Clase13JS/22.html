@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num;
+        var letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+        var res = 0;
+        do{
+            num = prompt("ingrese un numero", "");
+
+            if(num === null){
+                alert("Operacion cancelada");
+                break;
+            } else if (isNaN(num)) {
+                alert("Ingrese un numero");
+            } else {
+                res = parseInt(num) % 23;
+                document.write("DNI: " + num + "<br>");
+                document.write("resultado: " + res + "<br>");
+                document.write("Letra: " + letras[res] + "<br>");
+                console.log(res)
+            }
+        } while (num !== null);
+    </script>
+</body>
+</html>

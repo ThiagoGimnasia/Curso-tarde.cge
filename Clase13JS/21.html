@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num;
+        var res = 0;
+        do{
+            num = prompt("ingrese un numero", "");
+
+            if(num === null){
+                alert("Operacion cancelada");
+                break;
+            } else if (isNaN(num)) {
+                alert("Ingrese un numero");
+            } else {
+                res += parseFloat(num);
+            }
+            
+
+        } while (num !== null);
+        document.write("Resultado: " + res );
+    </script>
+</body>
+</html>

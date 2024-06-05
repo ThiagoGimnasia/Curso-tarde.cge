@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        b {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 13</h1>
+    <h3>
+    <script>
+        var num = prompt("13 - ingrese un numero", "");
+        if( num % 2 == 0 || num % 3 == 0 || num % 5 == 0 || num % 7 == 0){
+            document.write("El numero <b>" + num + "</b> es divisible.");
+        }
+    </script>
+    </h3>
+
+    <h1>Ejercicio 14</h1>
+    <h3>
+    <script>
+        var num = prompt("14 - ingrese un numero", "");
+        if( num % 2 == 0 ){
+            document.write("El numero <b>" + num + "</b> es divisible por 2. <br>");
+        }
+        if( num % 3 == 0 ){
+            document.write("El numero <b>" + num + "</b> es divisible por 3.  <br>");
+        }
+        if( num % 5 == 0 ){
+            document.write("El numero <b>" + num + "</b> es divisible por 5.  <br>");
+        }
+        if( num % 7 == 0){
+            document.write("El numero <b>" + num + "</b> es divisible por 7. <br>");
+        }
+    </script>
+    </h3>
+
+    <h1>Ejercicio 15</h1>
+    <h3>
+    <script>
+        var num = parseFloat(prompt("15 - ingrese un numero", ""));
+        for (i = 1 /*Empiezo en el numero 1*/; i<=num /*Voy hasta el numero ingresado*/; i++ /*De uno en uno*/) {
+
+            if( num % i == 0 ){ //Divido el numero por i, que es el paso del for, de uno en uno
+                document.write("El numero <b>" + num + "</b> es divisible por " + i + ". <br>");
+            }
+        }
+    </script> 
+    </h3>
+    <h1>Ejercicio 16</h1>
+    <h3>
+    <script>
+        var num1 = parseFloat(prompt("16 - ingrese un numero", ""));
+        var num2 = parseFloat(prompt("16 - Ingrese otro numero", ""));
+
+        if (num1<num2){
+            for(i=1;i<=num1; i++){
+                if(num1 % i == 0 && num2 % i == 0){
+                    document.write("El numero " + num1 + " y el " + num2 + " son divisibles por " + i + ". <br>");
+                }
+            }
+        } else {
+            for(i=1;i<=num2; i++){
+                if(num1 % i == 0 && num2 % i == 0){
+                    document.write("El numero " + num1 + " y el " + num2 + " son divisibles por " + i + ". <br>");
+                }
+            }
+        }
+    </script>
+    </h3>
+</body>
+</html>
